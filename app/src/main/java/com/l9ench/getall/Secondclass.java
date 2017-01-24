@@ -6,13 +6,14 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
+/**
+ * Created by viswanath on 24-01-2017.
+ */
 
-
-public class Secondclass  extends Application {
-
-    public static final String TAG = Secondclass.class.getSimpleName();
+public class SecondClass extends Application {
+    public static final String TAG = SecondClass.class.getSimpleName();
     private RequestQueue mRequestQueue;
-    private static Secondclass mInstance;
+    private static SecondClass mInstance;
 
     @Override
     public void onCreate() {
@@ -22,7 +23,7 @@ public class Secondclass  extends Application {
 
     }
 
-    public static synchronized Secondclass getInstance() {
+    public static synchronized SecondClass getInstance() {
         return mInstance;
     }
 
@@ -49,9 +50,4 @@ public class Secondclass  extends Application {
         }
     }
 }
-
-
-
-
-
 
